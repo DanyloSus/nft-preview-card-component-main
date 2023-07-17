@@ -8,9 +8,10 @@ function Img({ src, alt }) {
   return (
     <div id="img" className="hover" onClick={handleClick}>
       <img src={src} alt={alt} />
-      <div>
+      <div className="overlay">
         <img src="icon-view.svg" alt="icon view" />
       </div>
+      <div className="bg"></div>
     </div>
   );
 }

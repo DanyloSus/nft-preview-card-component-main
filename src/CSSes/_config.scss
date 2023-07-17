@@ -8,10 +8,13 @@ $very-dark-blue-l: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
 $width: 100%/12% * 3%;
-$height: 100%/12% * 8%;
+$height: 100%/12% * 9%;
 
 $mobile-width: 100%/12% * 11.5%;
-$mobile-height: 100%/12% * 9.75%;
+$mobile-height: 100%/12% * 11%;
+
+$table-width: 100%/12% * 11.5%;
+$table-height: 100%/12% * 9.75%;
 
 @mixin translate-ease($some: all) {
   transition: $some 0.5s ease-in-out;
@@ -38,6 +41,8 @@ body {
 
 .hover {
   cursor: pointer;
+
+  @include translate-ease;
 
   &:hover {
     color: $cyan;
