@@ -7,6 +7,16 @@ $very-dark-blue-cBG: hsl(216, 50%, 16%);
 $very-dark-blue-l: hsl(215, 32%, 27%);
 $white: hsl(0, 0%, 100%);
 
+$width: 100%/12% * 3%;
+$height: 100%/12% * 8%;
+
+$mobile-width: 100%/12% * 11.5%;
+$mobile-height: 100%/12% * 9.75%;
+
+@mixin translate-ease($some: all) {
+  transition: $some 0.5s ease-in-out;
+}
+
 :root {
   font-family: "Outfit", sans-serif;
   font-size: 18px;
@@ -16,4 +26,20 @@ $white: hsl(0, 0%, 100%);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $very-dark-blue-mBG;
+
+  color: $soft-blue;
+
+  overflow: hidden;
+}
+
+.hover {
+  cursor: pointer;
+
+  &:hover {
+    color: $cyan;
+  }
 }

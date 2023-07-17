@@ -1,0 +1,58 @@
+#img {
+  border-radius: 20px;
+
+  position: relative;
+
+  @include translate-ease;
+
+  width: 100%;
+  height: auto;
+  transform: translate(-0%, -0%);
+  top: 0%;
+  left: 0%;
+
+  &.big {
+    position: relative;
+    width: 250%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  &:hover:not(.big) div {
+    opacity: 1;
+  }
+
+  div {
+    position: absolute;
+    top: 0%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: hsla(178, 100%, 50%, 0.5);
+
+    opacity: 0;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      opacity: 1;
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+  }
+}

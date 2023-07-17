@@ -8,4 +8,132 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  overflow: hidden;
+}
+
+.hover {
+  cursor: pointer;
+}
+.hover:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+main {
+  width: 25%;
+  height: 66.6666666667%;
+  background-color: hsl(216, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0px 40px 100px hsla(0, 0%, 0%, 0.3);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#img {
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+  transform: translate(0%, 0%);
+  top: 0%;
+  left: 0%;
+}
+#img.big {
+  position: relative;
+  width: 250%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#img:hover:not(.big) div {
+  opacity: 1;
+}
+#img div {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#img div img {
+  opacity: 1;
+  width: 30px;
+  height: auto;
+}
+#img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+section h1 {
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  margin: 20px 0;
+}
+section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section div .price {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+section div .price img {
+  margin-right: 5px;
+}
+section div .date {
+  display: flex;
+  align-items: center;
+}
+section div .date img {
+  margin-right: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  width: 100%;
+  padding-top: 20px;
+}
+footer img {
+  width: 35px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+footer p {
+  margin-left: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+footer p span {
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=index.css.map */
